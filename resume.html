@@ -17,6 +17,12 @@
             padding: 0;
             background-color: #f9fafb; /* Light background for the body */
             color: #1f2937; /* Default text color */
+            /* Animation properties for page transition */
+            opacity: 0; /* Start invisible */
+            transition: opacity 0.7s ease-in-out; /* Fade-in duration */
+        }
+        body.page-loaded {
+            opacity: 1; /* Fade in when page is loaded */
         }
         .nav-link {
             transition: color 0.3s ease;
@@ -78,17 +84,15 @@
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
             <p>&copy; <span id="currentYear"></span> Shaheem P. All rights reserved.</p>
-           
+            <p class="text-sm mt-2">Designed with <i class="fas fa-heart text-red-500"></i> by Gemini AI</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('currentYear').textContent = new Date().getFullYear();
-            // The resume URL is now directly set in the HTML href attribute.
-            // You can remove or comment out the JavaScript line below if you've done that.
-            // const resumeUrl = "YOUR_RESUME_URL_HERE"; // Replace with actual URL for contentFetchId: uploaded:shaheemP_resume.pdf
-            // document.getElementById('resumeDownloadLink').href = resumeUrl;
+            // Add class to body to trigger fade-in animation
+            document.body.classList.add('page-loaded');
         });
     </script>
 </body>
