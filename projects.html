@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaheem P's Portfolio - Projects</title>
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb; /* Light background for the body */
+            color: #1f2937; /* Default text color */
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #0d9488; /* Teal color on hover */
+        }
+        .active-nav {
+            color: #0d9488; /* Teal-600 for active link */
+            font-weight: 600; /* Semi-bold for active link */
+        }
+        .project-image-placeholder {
+            background-color: #e0f2f7; /* Light blue background */
+            color: #0f766e; /* Darker teal text */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 180px; /* Fixed height for consistency */
+            font-weight: 600;
+            border-radius: 0.75rem; /* Rounded corners */
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <!-- Logo/Name -->
+            <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition duration-300">Shaheem P</a>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-4 sm:space-x-6">
+                    <li><a href="index.html" class="nav-link text-gray-700 font-medium">Home</a></li>
+                    <li><a href="projects.html" class="nav-link text-gray-700 font-medium active-nav">Projects</a></li>
+                    <li><a href="academics.html" class="nav-link text-gray-700 font-medium">Academics</a></li>
+                    <li><a href="certificates.html" class="nav-link text-gray-700 font-medium">Certificates</a></li>
+                    <li><a href="resume.html" class="nav-link text-gray-700 font-medium">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link text-gray-700 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Projects Section -->
+    <main class="pt-20 pb-8 bg-gray-50 min-h-screen">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            <section id="projects-content" class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1: SIGN LANGUAGE RECOGNITION -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        <div class="project-image-placeholder rounded-xl mb-4">
+                            <i class="fas fa-hand-sparkles text-5xl opacity-75"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-teal-700 mb-3">SIGN LANGUAGE RECOGNITION</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            A Convolutional Neural Network (CNN) built to classify American Sign Language (ASL) alphabets from static
+                            hand gesture images, achieving high accuracy through architectural tuning and regularization techniques.
+                        </p>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            <span class="font-medium text-gray-800">Technologies:</span> Python, TensorFlow, Machine Learning, OpenCV, MediaPipe
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+                            <li>Preprocessed and augmented the dataset with normalization, resizing, and transformations to improve model generalization and address class imbalance.</li>
+                            <li>Evaluated performance using confusion matrix and classification report; used TensorBoard and visualizations to monitor and refine training progress.</li>
+                            <li>System extended to support real-time sign language detection using webcam input for efficient hand tracking and gesture classification.</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/shaheem1729/Sign-language-detection-using-CNN" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-teal-700 transition duration-300 shadow-md">
+                                <i class="fab fa-github mr-2"></i> GitHub 
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Project 2: UNIVOTE - ONLINE VOTING APP -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        <div class="project-image-placeholder rounded-xl mb-4">
+                            <i class="fas fa-vote-yea text-5xl opacity-75"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-teal-700 mb-3">UNIVOTE - ONLINE VOTING APP</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            A cross-platform mobile app using Flutter and Supabase to manage secure, time-bound university
+                            elections with separate roles for admin and student users.
+                        </p>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            <span class="font-medium text-gray-800">Technologies:</span> Flutter, Supabase, Application Development
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+                            <li>Implemented admin functionalities including candidate approval, election scheduling, and result publication through an intuitive interface.</li>
+                            <li>Enabled students to securely log in, register candidacy, and cast votes during the active election period; ensured data consistency with real-time updates.</li>
+                            <li>Designed full election lifecycle management with authentication, access control, and dynamic visibility of results, suitable for academic institutional use.</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/abhinandhp/univote" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-teal-700 transition duration-300 shadow-md">
+                                <i class="fab fa-github mr-2"></i> GitHub 
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <p>&copy; <span id="currentYear"></span> Shaheem P. All rights reserved.</p>
+          
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

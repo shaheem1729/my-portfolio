@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaheem P's Portfolio - Academics</title>
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb; /* Light background for the body */
+            color: #1f2937; /* Default text color */
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #0d9488; /* Teal color on hover */
+        }
+        .active-nav {
+            color: #f97316; /* Orange-500 for active link */
+            font-weight: 600; /* Semi-bold for active link */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <!-- Logo/Name -->
+            <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition duration-300">Shaheem P</a>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-4 sm:space-x-6">
+                    <li><a href="index.html" class="nav-link text-gray-700 font-medium">Home</a></li>
+                    <li><a href="projects.html" class="nav-link text-gray-700 font-medium">Projects</a></li>
+                    <li><a href="academics.html" class="nav-link text-gray-700 font-medium active-nav">Academics</a></li>
+                    <li><a href="certificates.html" class="nav-link text-gray-700 font-medium">Certificates</a></li>
+                    <li><a href="resume.html" class="nav-link text-gray-700 font-medium">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link text-gray-700 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Academics Section -->
+    <main class="pt-20 pb-8 bg-gray-50 min-h-screen">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            <section id="academics-content" class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Academic Journey</h2>
+                <div class="text-center">
+                    <p class="text-lg text-gray-700 mb-4">
+                        <span class="font-semibold text-indigo-600">National Institute of Technology, Calicut</span>
+                    </p>
+                    <p class="text-2xl font-semibold text-gray-800 mb-6">
+                        B.Tech in Computer Science and Engineering
+                    </p>
+                    <p class="text-4xl font-extrabold text-orange-600 mb-8">
+                        CGPA: 7.23
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Key Coursework & Relevant Subjects</h3>
+                    <div class="flex justify-center">
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-lg text-gray-700 list-disc list-inside max-w-2xl">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Operating Systems</li>
+                            <li>Database Management Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Machine Learning</li>
+                            <li>Software Engineering</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Web Development</li>
+                            <!-- Add more coursework here as needed -->
+                        </ul>
+                    </div>
+
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Awards & Achievements</h3>
+                        <p class="text-lg text-gray-600 italic">
+                           
+                        </p>
+                        <div class="flex justify-center">
+                            <li class="flex items-center gap-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
+                                     alt="LeetCode Logo" 
+                                    class="h-6 w-6">
+                                <a href="https://leetcode.com/u/Sh4heem_/" 
+                                target="_blank" 
+                                class="text-blue-600 hover:underline font-semibold">
+                                LeetCode Profile – Solved 200+ Problems
+                                </a>
+                            </li>
+                        </div>
+                          
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <p>&copy; <span id="currentYear"></span> Shaheem P. All rights reserved.</p>
+         
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
